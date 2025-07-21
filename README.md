@@ -3,7 +3,7 @@
 This is a simple project to test Celery working with FastAPI. The project is dockerized.
 
 ## How to run
-1. Run the services:
+1. Run the service using docker:
     ```
     docker-compose up --build
     ```
