@@ -3,7 +3,7 @@ from .celery_worker import create_task, send_mail_task
 
 app = FastAPI()
 
-@app.get("/")
+@app.get("/health")
 def read_root():
     create_task.delay()
     return {"message": "Task is running in the background"}
